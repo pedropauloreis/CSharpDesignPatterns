@@ -16,14 +16,13 @@ namespace _04_Adapter
 
 
 
-            IPaymentAdapter payment = null;
-            string pagamento = "Payonner";
+            IPayPalPayment payment = null;
+            string pagamento = "Paypal";
 
             switch(pagamento)
             {
                 case "Paypal":
-                    PayPal paypal = new PayPal();
-                    payment = new PayPalAdapter(paypal);
+                    payment = new PayPal();
                     break;
                 case "Payonner":
                     Payonner payonner = new Payonner();
@@ -33,8 +32,8 @@ namespace _04_Adapter
             
             if(payment != null)
             {
-                payment.Send();
-                payment.Receive();
+                payment.PayPalPayment();
+                payment.PayPalReceive();
 
             }
 

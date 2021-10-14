@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _04_Adapter.Payments.Paypal
+namespace _04_Adapter.Payments
 {
     class Token
     {

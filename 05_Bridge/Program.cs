@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _04_Adapter.Payments
+namespace _05_Bridge
 {
-    interface IPaymentAdapter
+    class Program
     {
-        void Send();
-        void Receive();
+        static void Main(string[] args)
+        {
+        }
     }
 }
