@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Platforms\DLive.cs" />
+    <Compile Include="Platforms\Facebook.cs" />
+    <Compile Include="Platforms\IPlatform.cs" />
+    <Compile Include="Platforms\TwitchTV.cs" />
+    <Compile Include="Platforms\Youtube.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transmissions\AdvancedLive.cs" />
+    <Compile Include="Transmissions\ITransmission.cs" />
+    <Compile Include="Transmissions\Live.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
